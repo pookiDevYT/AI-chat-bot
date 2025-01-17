@@ -1,7 +1,7 @@
 import os
 from huggingface_hub import InferenceClient
 
-api_key = "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"
+api_key = "YOUR API here"
 
 input_file = "input.txt"
 output_file = "output.txt"
