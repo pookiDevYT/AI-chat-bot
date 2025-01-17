@@ -1,0 +1,38 @@
+code helper: Sure! Let's create a simple text-based game called "Guess the Number." Here's a basic version:
+
+```python
+import random
+
+def guess_the_number():
+    number_to_guess = random.randint(1, 100)
+    attempts = 0
+
+    print("Welcome to 'Guess the Number'!")
+    print("I'm thinking of a number between 1 and 100.")
+
+    while True:
+        try:
+            guess = int(input("Enter your guess: "))
+            attempts += 1
+
+            if guess < number_to_guess:
+                print("Too low!")
+            elif guess > number_to_guess:
+                print("Too high!")
+            else:
+                print(f"Congratulations! You guessed the number {number_to_guess} in {attempts} attempts.")
+                break
+        except ValueError:
+            print("Please enter a valid integer.")
+
+if __name__ == "__main__":
+    guess_the_number()
+```
+
+**How it works:**
+1. The program generates a random number between 1 and 100.
+2. It prompts the user to guess the number.
+3. It checks if the guess is too high, too low, or correct.
+4. It continues until the user guesses the number correctly, then it shows how many attempts it took.
+
+You can run this script in any Python environment to play the game. Let me know if you want a different type of game or need further modifications!
